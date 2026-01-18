@@ -1,7 +1,9 @@
 STUDENT GRADING MANAGEMENT
 
 Name: Amu Phillip Darasimi
+
 Matric No:24/14276
+
 Department: Computer science
 
 Features 
@@ -35,4 +37,5 @@ Steps to Run
 
 1. Save the code as grade_manager.py
 2. Open terminal and navigate to the folder
+
 3. Execute: Type python grade_manager.py and press Enter

@@ -1,7 +1,7 @@
 import os
 
 class GradeManager:
-    def __init__(self):  # Fixed: Changed _init_ to __init__
+    def _init(self):  # Fixed: Changed _init to _init_
         self.students = []  # List of student dicts: {'student_id': int, 'name': str, 'courses': {'Course': grade}}
         self.file_name = 'grades.txt'
         self.load_data()
@@ -208,5 +208,5 @@ def main():
         else:
             print("Invalid choice. Please try again.")
 
-if __name__ == "__main__":  # Fixed: Changed _main_ to __main__
+if __name__== "_main_":  # Fixed: Changed _main to _main_
     main()

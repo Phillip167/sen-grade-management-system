@@ -1,48 +1,38 @@
+STUDENT GRADING MANAGEMENT
 
-Student Grade Management System
-A lightweight, terminal-based Python application designed to manage student academic records. This system allows users to track students, record grades for various courses, calculate averages, and persist data to a local text file.
+Name: Amu Phillip Darasimi
+Matric No:24/14276
+Department: Computer science
 
-  Features
- -Data Persistence: Automatically saves and loads data from a grades.txt file.
- -Student Management: Add or delete students from the system.
- -Grade Tracking: Add, update, or remove grades for specific courses.
- - Automatic Calculations: View individual and class-wide averages.
-  -Input Validation: Error handling for invalid IDs and out-of-range grades.
-  Data Structure
-The application organizes data using a list of dictionaries, structured as follows:
+Features 
 
-| Field | Type | Description |
-|---|---|---|
-| student_id | Integer | Unique identifier for each student. |
-| name | String | Full name of the student. |
-| courses | Dictionary | Key-value pairs of {Course_Name: Grade}. |
+· Add New Students - Register students with auto-generated IDs
+· View All Students - See complete list with average grades
+·  View Student Details - Check individual student records and grades
+· Delete Students - Remove student records entirely
 
- Prerequisites
-To run this script, you only need:
- -Python 3.x installed on your machine.
-  -No external libraries are required (uses built-in os and io modules).
+Grade Management
 
-  Installation & Usage
-  -Clone or Download the script to your local machine.
-  -Open your terminal or command prompt.
-  -Navigate to the folder containing the script.
-  -Run the application using the following command:
-   python your_filename.py
+·  Add Grades - Assign grades (0-100) to students for specific courses
+· Update Grades - Modify existing grades
+· Delete Course Grades - Remove specific course grades
+· Automatic Average Calculation - System computes student averages
 
-How it Works
-The system uses a pipe-delimited (|) format for the flat-file database (grades.txt).
+Data Persistence
 
-Example entry:
-1|John Doe|Math:95.0|Science:88.0
-Menu Options:
- Add Student: Register a new name and assign a unique ID.
- Add Grade: Assign a numeric score (0-100) to a specific course for a student.
-  View All Students: Displays a summary of all students and their course list.
- View Student Details: Detailed view of a single student's performance.
- Update Grade: Modify an existing course grade.
-  Delete Student/Course: Remove specific records from the database.
+·  Automatic File Storage - All data saved to grades.txt
+· Data Recovery - Loads previous data on startup
+·  Real-time Updates - Changes saved immediately
 
- Potential Fixes for your Code
- Constructor Fix: In Python, the constructor must be __init__ (double underscores). In your provided code, it is written as _init_ (single underscores), which will prevent the class from initializing correctly.
- - Entry Point Fix: Similarly, the bottom check should be if __name__ == "__main__":.
+ Installation & Setup
 
+Prerequisites
+
+· Python 3.x installed
+· Basic terminal/command prompt knowledge
+
+Steps to Run
+
+1. Save the code as grade_manager.py
+2. Open terminal and navigate to the folder
+3. Execute: Type python grade_manager.py and press Enter
